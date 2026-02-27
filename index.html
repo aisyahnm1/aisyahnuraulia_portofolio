@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aisyah Nur Aulia | Siswi TKJ - Portofolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+/* Soft Pastel Color Palette */
+--primary: #a78bfa;
+--primary-dark: #9370db;
+--primary-light: #c4b5fd;
+--secondary: #7dd3fc;
+--secondary-light: #bae6fd;
+--accent: #c084fc;
+--accent-light: #e9d5ff;
+--dark: #475569;
+--dark-soft: #64748b;
+--light: #fafafa;
+--gray: #788097;
+--light-gray: #f1f5f9;
+--success: #86efac;
+--warning: #fcd34d;
+--pink-soft: #fbcfe8;
+--blue-soft: #dbeafe;
+--purple-soft: #ede9fe;
+--shadow: 0 10px 25px -5px rgba(167, 139, 250, 0.15), 0 8px 10px -6px rgba(167, 139, 250, 0.1);
+--shadow-hover: 0 20px 25px -5px rgba(167, 139, 250, 0.2), 0 10px 10px -5px rgba(167, 139, 250, 0.08);
+--transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+--radius: 20px;
+--radius-sm: 14px;
+--radius-circle: 50%;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Inter', sans-serif;
+line-height: 1.6;
+color: var(--dark);
+background-color: #fafbfc;
+overflow-x: hidden;
+position: relative;
+}
+body::before {
+content: '';
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background:
+radial-gradient(circle at 10% 20%, rgba(167, 139, 250, 0.06) 0%, transparent 25%),
+radial-gradient(circle at 90% 80%, rgba(125, 211, 252, 0.06) 0%, transparent 25%),
+radial-gradient(circle at 50% 50%, rgba(192, 132, 252, 0.04) 0%, transparent 35%);
+z-index: -1;
+pointer-events: none;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Manrope', sans-serif;
+font-weight: 800;
+line-height: 1.2;
+}
+.container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+section {
+padding: 100px 0;
+position: relative;
+}
+.section-title {
+text-align: center;
+margin-bottom: 70px;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+}
+.section-title h2 {
+font-size: 3.2rem;
+margin-bottom: 15px;
+background: linear-gradient(45deg, var(--dark), var(--accent));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+position: relative;
+display: inline-block;
+}
+.section-title h2::after {
+content: '';
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+width: 70px;
+height: 4px;
+background: var(--primary);
+border-radius: 2px;
+}
+.section-title p {
+color: var(--gray);
+font-size: 1.2rem;
+margin-top: 25px;
+font-weight: 500;
+}
+
+/* Navbar */
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 0;
+z-index: 1000;
+transition: var(--transition);
+}
+nav.scrolled {
+background: rgba(255, 255, 255, 0.95);
+box-shadow: var(--shadow);
+padding: 12px 0;
+backdrop-filter: blur(10px);
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo {
+font-family: 'Manrope', sans-serif;
+font-size: 1.8rem;
+font-weight: 800;
+background: linear-gradient(45deg, var(--primary), var(--accent));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+.nav-links {
+display: flex;
+list-style: none;
+gap: 35px;
+}
+.nav-links a {
+text-decoration: none;
+color: var(--dark);
+font-weight: 600;
+font-size: 1.05rem;
+position: relative;
+padding: 5px 0;
+transition: var(--transition);
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: var(--primary);
+}
+.nav-links a::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0;
+height: 2px;
+background: var(--primary);
+transition: var(--transition);
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+width: 100%;
+}
+.nav-download {
+background: linear-gradient(45deg, var(--primary), var(--accent));
+color: white;
+padding: 10px 25px;
+border-radius: 50px;
+font-weight: 600;
+transition: var(--transition);
+box-shadow: 0 4px 15px rgba(167, 139, 250, 0.35);
+}
+.nav-download:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(167, 139, 250, 0.45);
+}
+.hamburger {
+display: none;
+background: none;
+border: none;
+font-size: 1.5rem;
+color: var(--dark);
+cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+min-height: 100vh;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+padding-top: 80px;
+background: linear-gradient(135deg, rgba(250, 251, 252, 0.8) 0%, rgba(238, 242, 255, 0.5) 100%);
+}
+.hero-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+position: relative;
+z-index: 2;
+}
+.hero-text {
+flex: 1;
+padding-right: 50px;
+}
+.hero-text h1 {
+font-size: 5rem;
+margin-bottom: 25px;
+line-height: 1.1;
+}
+.hero-text h1 span {
+background: linear-gradient(45deg, var(--primary), var(--secondary));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+position: relative;
+}
+.hero-text h1 span::after {
+content: '';
+position: absolute;
+bottom: 8px;
+left: 0;
+width: 100%;
+height: 16px;
+background: rgba(167, 139, 250, 0.12);
+z-index: -1;
+border-radius: 10px;
+}
+.hero-text p {
+font-size: 1.45rem;
+color: var(--gray);
+margin-bottom: 40px;
+max-width: 650px;
+font-weight: 500;
+}
+.hero-image {
+flex: 1;
+display: flex;
+justify-content: center;
+position: relative;
+}
+.hero-image img {
+width: 100%;
+max-width: 580px;
+border-radius: var(--radius);
+box-shadow: var(--shadow-hover);
+border: 12px solid white;
+z-index: 2;
+animation: float 6s ease-in-out infinite;
+transform-origin: bottom;
+}
+.hero-shape {
+position: absolute;
+width: 450px;
+height: 450px;
+background: linear-gradient(45deg, var(--primary-light), var(--secondary-light), var(--accent-light));
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+top: -120px;
+right: -180px;
+z-index: 1;
+opacity: 0.5;
+filter: blur(70px);
+animation: pulse 8s ease-in-out infinite;
+}
+.btn-container {
+display: flex;
+gap: 15px;
+margin-top: 20px;
+}
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(45deg, var(--primary), var(--accent));
+color: white;
+padding: 18px 42px;
+border-radius: 50px;
+font-weight: 700;
+font-size: 1.15rem;
+letter-spacing: -0.5px;
+box-shadow: var(--shadow);
+transition: var(--transition);
+border: none;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+z-index: 1;
+font-family: 'Manrope', sans-serif;
+text-transform: uppercase;
+font-size: 0.95rem;
+letter-spacing: 1.5px;
+}
+.btn::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(45deg, var(--accent), var(--primary-dark));
+z-index: -1;
+transition: var(--transition);
+transform: scaleX(0);
+transform-origin: right;
+}
+.btn:hover {
+transform: translateY(-4px);
+box-shadow: var(--shadow-hover);
+}
+.btn:hover::before {
+transform: scaleX(1);
+transform-origin: left;
+}
+.btn i {
+margin-left: 8px;
+font-size: 1.1em;
+transition: var(--transition);
+}
+.btn:hover i {
+transform: translateX(3px);
+}
+.btn-secondary {
+background: transparent;
+border: 2px solid var(--primary);
+color: var(--primary);
+box-shadow: none;
+}
+.btn-secondary::before {
+background: rgba(167, 139, 250, 0.12);
+}
+.btn-secondary:hover {
+color: white;
+}
+
+/* About Section */
+#about {
+background-color: white;
+position: relative;
+overflow: hidden;
+}
+#about::before {
+content: '';
+position: absolute;
+top: -100px;
+right: -100px;
+width: 300px;
+height: 300px;
+background: radial-gradient(circle, rgba(167, 139, 250, 0.08) 0%, transparent 70%);
+border-radius: var(--radius-circle);
+z-index: 0;
+}
+#about::after {
+content: '';
+position: absolute;
+bottom: -150px;
+left: -50px;
+width: 400px;
+height: 400px;
+background: radial-gradient(circle, rgba(125, 211, 252, 0.08) 0%, transparent 70%);
+border-radius: var(--radius-circle);
+z-index: 0;
+}
+.about-content {
+display: flex;
+align-items: center;
+gap: 70px;
+position: relative;
+z-index: 2;
+}
+.about-text {
+flex: 1;
+}
+.about-text h3 {
+font-size: 2.8rem;
+margin-bottom: 25px;
+color: var(--dark);
+}
+.about-text p {
+margin-bottom: 20px;
+font-size: 1.15rem;
+color: var(--gray);
+font-weight: 500;
+}
+.about-text .highlight {
+background: linear-gradient(135deg, var(--purple-soft), var(--blue-soft));
+padding: 30px;
+border-radius: var(--radius-sm);
+margin: 30px 0;
+border-left: 3px solid var(--primary);
+font-style: italic;
+font-family: 'Manrope', sans-serif;
+position: relative;
+font-weight: 600;
+font-size: 1.25rem;
+line-height: 1.5;
+}
+.about-text .highlight::before {
+content: '"';
+position: absolute;
+top: -15px;
+left: 10px;
+font-size: 6rem;
+color: rgba(167, 139, 250, 0.12);
+font-family: Georgia, serif;
+line-height: 1;
+font-weight: 200;
+}
+.about-image {
+flex: 1;
+display: flex;
+justify-content: center;
+position: relative;
+}
+.about-image img {
+width: 100%;
+max-width: 480px;
+border-radius: var(--radius);
+box-shadow: var(--shadow-hover);
+border: 8px solid white;
+position: relative;
+z-index: 2;
+animation: float 7s ease-in-out infinite 0.5s;
+}
+.about-image::before {
+content: '';
+position: absolute;
+width: 95%;
+height: 95%;
+background: linear-gradient(45deg, var(--secondary-light), #93c5fd, var(--primary-light));
+border-radius: var(--radius);
+z-index: 1;
+bottom: -20px;
+right: -20px;
+filter: blur(25px);
+opacity: 0.6;
+}
+
+/* Skills Section */
+#skills {
+background-color: #fafbfc;
+position: relative;
+overflow: hidden;
+}
+.skills-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+gap: 30px;
+margin-top: 30px;
+position: relative;
+z-index: 2;
+}
+.skill-card {
+background: white;
+border-radius: var(--radius-sm);
+padding: 35px 30px;
+text-align: center;
+box-shadow: var(--shadow);
+transition: var(--transition);
+border: 1px solid rgba(167, 139, 250, 0.1);
+position: relative;
+overflow: hidden;
+z-index: 1;
+}
+.skill-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: linear-gradient(90deg, var(--primary-light), var(--secondary-light), var(--accent-light));
+z-index: 1;
+}
+.skill-card:hover {
+transform: translateY(-10px) scale(1.02);
+box-shadow: var(--shadow-hover);
+border-color: rgba(167, 139, 250, 0.25);
+}
+.skill-icon {
+width: 80px;
+height: 80px;
+background: linear-gradient(135deg, var(--purple-soft), var(--accent-light));
+border-radius: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto 22px;
+color: var(--primary);
+font-size: 2.2rem;
+transition: var(--transition);
+border: 2px solid rgba(167, 139, 250, 0.15);
+}
+.skill-card:hover .skill-icon {
+transform: scale(1.15) rotate(5deg);
+background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
+box-shadow: 0 8px 20px rgba(167, 139, 250, 0.2);
+color: white;
+}
+.skill-card h3 {
+margin-bottom: 12px;
+font-size: 1.8rem;
+color: var(--dark);
+}
+.skill-card p {
+color: var(--gray);
+font-size: 1.05rem;
+font-weight: 500;
+}
+
+/* Portfolio Section */
+#portfolio {
+background-color: white;
+position: relative;
+}
+.portfolio-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+gap: 35px;
+margin-top: 30px;
+}
+.portfolio-item {
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: var(--shadow);
+transition: var(--transition);
+position: relative;
+height: 340px;
+}
+.portfolio-item:hover {
+transform: translateY(-12px);
+box-shadow: var(--shadow-hover);
+}
+.portfolio-img {
+height: 65%;
+overflow: hidden;
+position: relative;
+}
+.portfolio-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: var(--transition);
+}
+.portfolio-item:hover .portfolio-img img {
+transform: scale(1.08);
+}
+.portfolio-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, rgba(167, 139, 250, 0.88), rgba(192, 132, 252, 0.85));
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 25px;
+text-align: center;
+opacity: 0;
+transition: var(--transition);
+color: white;
+z-index: 2;
+}
+.portfolio-item:hover .portfolio-overlay {
+opacity: 1;
+}
+.portfolio-overlay h3 {
+font-size: 2rem;
+margin-bottom: 12px;
+transform: translateY(15px);
+transition: var(--transition);
+transition-delay: 0.1s;
+}
+.portfolio-overlay p {
+transform: translateY(15px);
+transition: var(--transition);
+transition-delay: 0.2s;
+font-size: 1.15rem;
+max-width: 85%;
+margin-top: 8px;
+}
+.portfolio-item:hover .portfolio-overlay h3,
+.portfolio-item:hover .portfolio-overlay p {
+transform: translateY(0);
+}
+.portfolio-content {
+padding: 22px;
+height: 35%;
+background: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.portfolio-content h3 {
+font-size: 1.7rem;
+margin-bottom: 8px;
+}
+.portfolio-content p {
+color: var(--gray);
+font-weight: 500;
+font-size: 1.05rem;
+}
+.portfolio-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+margin-top: 12px;
+}
+.tag {
+background: var(--light-gray);
+color: var(--dark);
+padding: 4px 12px;
+border-radius: 50px;
+font-size: 0.85rem;
+font-weight: 600;
+}
+
+/* Experience Section */
+#experience {
+background: linear-gradient(135deg, #fafbfc 0%, #f5f7ff 100%);
+position: relative;
+overflow: hidden;
+}
+#experience::before {
+content: '';
+position: absolute;
+top: -150px;
+left: -100px;
+width: 350px;
+height: 350px;
+background: radial-gradient(circle, rgba(125, 211, 252, 0.1) 0%, transparent 70%);
+border-radius: var(--radius-circle);
+z-index: 0;
+}
+.experience-container {
+max-width: 850px;
+margin: 0 auto;
+position: relative;
+z-index: 2;
+}
+.experience-item {
+background: white;
+border-radius: var(--radius-sm);
+padding: 35px;
+margin-bottom: 30px;
+box-shadow: var(--shadow);
+position: relative;
+transition: var(--transition);
+border-left: 4px solid var(--primary);
+border-top: 1px solid rgba(0,0,0,0.03);
+}
+.experience-item:hover {
+transform: translateX(8px);
+box-shadow: var(--shadow-hover);
+border-left-color: var(--secondary);
+}
+.experience-item::before {
+content: '';
+position: absolute;
+top: 25px;
+left: -12px;
+width: 24px;
+height: 24px;
+background: white;
+border-radius: var(--radius-circle);
+border: 4px solid var(--primary);
+box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary);
+z-index: 2;
+}
+.experience-item:hover::before {
+background: var(--secondary);
+border-color: white;
+box-shadow: 0 0 0 2px white, 0 0 0 4px var(--secondary);
+}
+.experience-item::after {
+content: '';
+position: absolute;
+top: 45px;
+left: -8px;
+width: 16px;
+height: 16px;
+background: var(--primary);
+border-radius: var(--radius-circle);
+z-index: 1;
+}
+.experience-item:hover::after {
+background: var(--secondary);
+}
+.experience-item h3 {
+font-size: 2rem;
+margin-bottom: 8px;
+color: var(--dark);
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.experience-item h3 i {
+color: var(--primary);
+font-size: 1.5rem;
+}
+.experience-item:hover h3 i {
+color: var(--secondary);
+}
+.experience-item .company {
+color: var(--primary);
+font-weight: 700;
+font-size: 1.35rem;
+display: block;
+margin-bottom: 10px;
+font-family: 'Manrope', sans-serif;
+}
+.experience-item .date {
+color: var(--warning);
+font-weight: 600;
+margin-bottom: 18px;
+display: block;
+font-size: 1.1rem;
+letter-spacing: -0.5px;
+}
+.experience-item p {
+color: var(--gray);
+font-size: 1.1rem;
+font-weight: 500;
+line-height: 1.6;
+}
+
+/* Contact Section */
+#contact {
+background: white;
+position: relative;
+overflow: hidden;
+}
+#contact::before {
+content: '';
+position: absolute;
+bottom: -100px;
+right: -100px;
+width: 300px;
+height: 300px;
+background: radial-gradient(circle, rgba(192, 132, 252, 0.08) 0%, transparent 70%);
+border-radius: var(--radius-circle);
+z-index: 0;
+}
+.contact-container {
+display: flex;
+gap: 60px;
+margin-top: 30px;
+position: relative;
+z-index: 2;
+}
+.contact-info {
+flex: 1;
+}
+.contact-info h3 {
+font-size: 2.5rem;
+margin-bottom: 35px;
+color: var(--dark);
+position: relative;
+padding-bottom: 15px;
+display: inline-block;
+}
+.contact-info h3::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 55px;
+height: 4px;
+background: var(--secondary);
+border-radius: 2px;
+bottom: -5px;
+}
+.contact-item {
+display: flex;
+margin-bottom: 30px;
+align-items: flex-start;
+}
+.contact-icon {
+min-width: 55px;
+height: 55px;
+background: linear-gradient(135deg, var(--primary), var(--accent));
+border-radius: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 22px;
+color: white;
+font-size: 1.45rem;
+flex-shrink: 0;
+box-shadow: var(--shadow);
+transition: var(--transition);
+}
+.contact-item:hover .contact-icon {
+transform: translateY(-3px) scale(1.05);
+box-shadow: var(--shadow-hover);
+border-radius: 24px;
+}
+.contact-text h4 {
+font-size: 1.5rem;
+margin-bottom: 8px;
+color: var(--dark);
+font-weight: 700;
+}
+.contact-text p,
+.contact-text a {
+color: var(--gray);
+text-decoration: none;
+transition: var(--transition);
+display: block;
+font-weight: 500;
+font-size: 1.1rem;
+}
+.contact-text a:hover {
+color: var(--primary);
+transform: translateX(4px);
+}
+.contact-form {
+flex: 1;
+background: #fafbfc;
+padding: 40px;
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+border: 1px solid var(--light-gray);
+}
+.form-group {
+margin-bottom: 25px;
+}
+.form-group label {
+display: block;
+margin-bottom: 10px;
+font-weight: 600;
+color: var(--dark);
+font-size: 1.05rem;
+}
+.form-control {
+width: 100%;
+padding: 16px 20px;
+border: 1px solid #e2e8f0;
+border-radius: 14px;
+font-family: 'Inter', sans-serif;
+font-size: 1.05rem;
+transition: var(--transition);
+background: white;
+}
+.form-control:focus {
+outline: none;
+border-color: var(--primary);
+box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.18);
+}
+textarea.form-control {
+min-height: 160px;
+resize: vertical;
+padding: 18px 20px;
+}
+.submit-btn {
+background: linear-gradient(45deg, var(--primary), var(--accent));
+color: white;
+border: none;
+padding: 18px 45px;
+border-radius: 50px;
+font-weight: 700;
+font-size: 1.15rem;
+cursor: pointer;
+transition: var(--transition);
+width: 100%;
+font-family: 'Manrope', sans-serif;
+letter-spacing: 0.5px;
+box-shadow: var(--shadow);
+margin-top: 10px;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 0.95rem;
+}
+.submit-btn:hover {
+transform: translateY(-3px);
+box-shadow: var(--shadow-hover);
+background: linear-gradient(45deg, var(--accent), var(--primary-dark));
+}
+
+/* Footer */
+footer {
+background: linear-gradient(135deg, #475569 0%, #334155 100%);
+color: rgba(255,255,255,0.85);
+text-align: center;
+padding: 50px 0 35px;
+position: relative;
+overflow: hidden;
+}
+footer::before {
+content: '';
+position: absolute;
+top: -100px;
+left: -100px;
+width: 300px;
+height: 300px;
+background: radial-gradient(circle, rgba(167, 139, 250, 0.12) 0%, transparent 70%);
+border-radius: var(--radius-circle);
+z-index: 0;
+}
+footer::after {
+content: '';
+position: absolute;
+bottom: -150px;
+right: -100px;
+width: 400px;
+height: 400px;
+background: radial-gradient(circle, rgba(125, 211, 252, 0.12) 0%, transparent 70%);
+border-radius: var(--radius-circle);
+z-index: 0;
+}
+.footer-content {
+max-width: 750px;
+margin: 0 auto;
+position: relative;
+z-index: 2;
+}
+.footer-logo {
+font-family: 'Manrope', sans-serif;
+font-size: 2.8rem;
+font-weight: 800;
+margin-bottom: 15px;
+background: linear-gradient(45deg, var(--secondary), var(--primary));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+letter-spacing: -1px;
+}
+.footer-tagline {
+font-size: 1.35rem;
+margin-bottom: 30px;
+font-weight: 300;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+.social-links {
+display: flex;
+justify-content: center;
+gap: 22px;
+margin: 30px 0;
+}
+.social-links a {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 55px;
+height: 55px;
+border-radius: var(--radius-circle);
+background: rgba(255,255,255,0.12);
+color: white;
+font-size: 1.45rem;
+transition: var(--transition);
+border: 1px solid rgba(255,255,255,0.2);
+}
+.social-links a:hover {
+background: var(--primary);
+transform: translateY(-4px) scale(1.1);
+box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+border-color: transparent;
+}
+.copyright {
+margin-top: 30px;
+padding-top: 25px;
+border-top: 1px solid rgba(255,255,255,0.15);
+font-size: 1.05rem;
+color: rgba(255,255,255,0.7);
+font-weight: 500;
+}
+
+/* Floating Action Button */
+.floating-cv {
+position: fixed;
+bottom: 35px;
+right: 35px;
+width: 65px;
+height: 65px;
+border-radius: var(--radius-circle);
+background: linear-gradient(45deg, var(--primary), var(--accent));
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.6rem;
+box-shadow: var(--shadow-hover);
+z-index: 999;
+transition: var(--transition);
+cursor: pointer;
+animation: pulse 2s infinite;
+}
+.floating-cv:hover {
+transform: scale(1.1) rotate(5deg);
+box-shadow: 0 0 0 3px white, var(--shadow-hover);
+animation: none;
+}
+.floating-cv i {
+position: relative;
+z-index: 2;
+}
+.floating-cv::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(45deg, var(--accent), var(--primary-dark));
+border-radius: var(--radius-circle);
+z-index: -1;
+opacity: 0;
+transition: var(--transition);
+}
+.floating-cv:hover::before {
+opacity: 1;
+animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+/* Back to Top Button */
+#backToTop {
+position: fixed;
+bottom: 35px;
+right: 115px;
+width: 55px;
+height: 55px;
+border-radius: var(--radius-circle);
+background: white;
+color: var(--primary);
+border: none;
+font-size: 1.4rem;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+box-shadow: var(--shadow);
+transition: var(--transition);
+z-index: 998;
+opacity: 0;
+visibility: hidden;
+transform: scale(0.8);
+}
+#backToTop.show {
+opacity: 1;
+visibility: visible;
+transform: scale(1);
+}
+#backToTop:hover {
+transform: scale(1.1) translateY(-3px);
+box-shadow: var(--shadow-hover);
+background: var(--primary);
+color: white;
+}
+
+/* ========== CV MODAL STYLES ========== */
+.cv-modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(71, 85, 105, 0.85);
+backdrop-filter: blur(8px);
+z-index: 10000;
+display: none;
+align-items: center;
+justify-content: center;
+padding: 20px;
+opacity: 0;
+transition: opacity 0.4s ease;
+}
+.cv-modal-overlay.active {
+display: flex;
+opacity: 1;
+}
+.cv-modal {
+background: white;
+border-radius: var(--radius);
+max-width: 900px;
+width: 100%;
+max-height: 90vh;
+overflow-y: auto;
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+position: relative;
+transform: scale(0.9) translateY(20px);
+transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.cv-modal-overlay.active .cv-modal {
+transform: scale(1) translateY(0);
+}
+.cv-modal-close {
+position: sticky;
+top: 0;
+right: 20px;
+float: right;
+width: 45px;
+height: 45px;
+border-radius: var(--radius-circle);
+background: linear-gradient(135deg, var(--primary), var(--accent));
+border: none;
+color: white;
+font-size: 1.5rem;
+cursor: pointer;
+transition: var(--transition);
+z-index: 10;
+margin: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: var(--shadow);
+}
+.cv-modal-close:hover {
+transform: scale(1.1) rotate(90deg);
+box-shadow: var(--shadow-hover);
+}
+.cv-content {
+padding: 50px;
+}
+.cv-header {
+display: flex;
+align-items: center;
+gap: 30px;
+margin-bottom: 40px;
+padding-bottom: 30px;
+border-bottom: 2px solid var(--light-gray);
+}
+.cv-photo {
+width: 150px;
+height: 150px;
+border-radius: var(--radius-circle);
+object-fit: cover;
+border: 4px solid var(--primary-light);
+box-shadow: var(--shadow);
+}
+.cv-header-info h1 {
+font-size: 2.5rem;
+margin-bottom: 8px;
+background: linear-gradient(45deg, var(--primary), var(--accent));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+.cv-header-info .title {
+font-size: 1.3rem;
+color: var(--gray);
+font-weight: 500;
+margin-bottom: 15px;
+}
+.cv-contact-info {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.cv-contact-item {
+display: flex;
+align-items: center;
+gap: 8px;
+color: var(--dark-soft);
+font-size: 0.95rem;
+}
+.cv-contact-item i {
+color: var(--primary);
+}
+.cv-section {
+margin-bottom: 35px;
+}
+.cv-section h3 {
+font-size: 1.6rem;
+margin-bottom: 20px;
+color: var(--dark);
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.cv-section h3 i {
+color: var(--primary);
+width: 35px;
+height: 35px;
+background: var(--purple-soft);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.1rem;
+}
+.cv-item {
+margin-bottom: 20px;
+padding-left: 15px;
+border-left: 3px solid var(--primary-light);
+}
+.cv-item h4 {
+font-size: 1.2rem;
+color: var(--dark);
+margin-bottom: 5px;
+}
+.cv-item .subtitle {
+color: var(--primary);
+font-weight: 600;
+font-size: 1rem;
+margin-bottom: 5px;
+}
+.cv-item .date {
+color: var(--warning);
+font-size: 0.9rem;
+font-weight: 600;
+margin-bottom: 8px;
+}
+.cv-item p {
+color: var(--gray);
+font-size: 0.95rem;
+line-height: 1.6;
+}
+.cv-skills-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+gap: 15px;
+}
+.cv-skill-item {
+background: var(--light-gray);
+padding: 12px 18px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
+font-weight: 500;
+color: var(--dark);
+}
+.cv-skill-item i {
+color: var(--primary);
+}
+.cv-download-btn {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+background: linear-gradient(45deg, var(--primary), var(--accent));
+color: white;
+padding: 15px 35px;
+border-radius: 50px;
+font-weight: 700;
+text-decoration: none;
+transition: var(--transition);
+box-shadow: var(--shadow);
+margin-top: 20px;
+border: none;
+cursor: pointer;
+font-size: 1rem;
+}
+.cv-download-btn:hover {
+transform: translateY(-3px);
+box-shadow: var(--shadow-hover);
+}
+.cv-download-btn i {
+font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes float {
+0%, 100% { transform: translateY(0) rotate(0deg); }
+50% { transform: translateY(-18px) rotate(2deg); }
+}
+@keyframes pulse {
+0% { box-shadow: 0 0 0 0 rgba(167, 139, 250, 0.35); }
+70% { box-shadow: 0 0 0 12px rgba(167, 139, 250, 0); }
+100% { box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+.hero-content {
+flex-direction: column;
+text-align: center;
+padding-top: 60px;
+}
+.hero-text {
+padding-right: 0;
+margin-bottom: 50px;
+}
+.hero-text p {
+margin-left: auto;
+margin-right: auto;
+}
+.hero-text h1 {
+font-size: 4.2rem;
+}
+.about-content,
+.contact-container {
+flex-direction: column;
+}
+.about-image, .hero-image {
+max-width: 480px;
+margin: 0 auto;
+}
+.portfolio-grid {
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.nav-links {
+display: none;
+}
+.hamburger {
+display: block;
+}
+.floating-cv {
+bottom: 25px;
+right: 25px;
+width: 60px;
+height: 60px;
+font-size: 1.5rem;
+}
+#backToTop {
+right: 90px;
+width: 50px;
+height: 50px;
+font-size: 1.3rem;
+}
+.cv-content {
+padding: 30px;
+}
+.cv-header {
+flex-direction: column;
+text-align: center;
+}
+.cv-contact-info {
+justify-content: center;
+}
+}
+@media (max-width: 768px) {
+section {
+padding: 75px 0;
+}
+.section-title h2 {
+font-size: 2.6rem;
+}
+.hero-text h1 {
+font-size: 3.5rem;
+}
+.hero-text p {
+font-size: 1.25rem;
+}
+.btn {
+padding: 16px 38px;
+font-size: 1.05rem;
+}
+.btn-container {
+flex-direction: column;
+align-items: center;
+}
+.btn-secondary {
+width: 100%;
+max-width: 300px;
+}
+.portfolio-grid {
+grid-template-columns: 1fr;
+}
+.contact-form {
+padding: 30px 25px;
+}
+.experience-item {
+padding: 28px;
+}
+.floating-cv {
+width: 55px;
+height: 55px;
+font-size: 1.4rem;
+}
+#backToTop {
+right: 80px;
+width: 45px;
+height: 45px;
+font-size: 1.2rem;
+}
+.cv-content {
+padding: 25px;
+}
+.cv-header-info h1 {
+font-size: 2rem;
+}
+.cv-skills-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 480px) {
+.hero-text h1 {
+font-size: 2.9rem;
+}
+.section-title h2 {
+font-size: 2.3rem;
+}
+.about-text h3, .contact-info h3 {
+font-size: 2.2rem;
+}
+.skill-card {
+padding: 30px 25px;
+}
+.skill-icon {
+width: 70px;
+height: 70px;
+font-size: 1.9rem;
+}
+.floating-cv {
+width: 50px;
+height: 50px;
+font-size: 1.3rem;
+bottom: 20px;
+right: 20px;
+}
+#backToTop {
+right: 75px;
+width: 40px;
+height: 40px;
+font-size: 1.1rem;
+bottom: 20px;
+}
+.nav-download {
+padding: 8px 20px;
+font-size: 0.95rem;
+}
+.cv-content {
+padding: 20px;
+}
+.cv-photo {
+width: 120px;
+height: 120px;
+}
+.cv-skills-grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar">
+<div class="container navbar">
+<div class="logo">Aisyah Nur Aulia</div>
+<ul class="nav-links">
+<li><a href="#about" class="active">Tentang</a></li>
+<li><a href="#skills">Keahlian</a></li>
+<li><a href="#portfolio">Portofolio</a></li>
+<li><a href="#experience">Pengalaman</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+<a href="#" class="nav-download" onclick="openCVModal(); return false;">
+<i class="fas fa-download"></i> Download CV
+</a>
+<button class="hamburger">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Halo, Saya <span>Aisyah Nur Aulia</span></h1>
+<p>Siswi Teknik Komputer dan Jaringan (TKJ) yang bersemangat dalam dunia networking, sistem administrasi, dan teknologi infrastruktur IT.</p>
+<div class="btn-container">
+<a href="#" class="btn" onclick="openCVModal(); return false;">
+Download CV <i class="fas fa-download"></i>
+</a>
+<a href="#portfolio" class="btn btn-secondary">
+Lihat Karya <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+</div>
+<div class="hero-image">
+<div class="hero-shape"></div>
+<img src="foto1.jpeg" alt="Aisyah Nur Aulia">
+</div>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+<div class="container">
+<div class="section-title">
+<h2>Tentang Saya</h2>
+<p>Cerita singkat tentang perjalanan dan passion saya di dunia teknologi</p>
+</div>
+<div class="about-content">
+<div class="about-text">
+<h3>Membangun Infrastruktur Digital Masa Depan</h3>
+<p>Saya adalah siswi Teknik Komputer dan Jaringan (TKJ) yang memiliki ketertarikan mendalam pada dunia networking, server administration, dan keamanan jaringan. Saat ini saya sedang menempuh pendidikan di SMK dengan fokus pada pengembangan kompetensi di bidang infrastruktur IT.</p>
+<p>Saya percaya bahwa teknologi jaringan adalah tulang punggung dari era digital, dan saya berkomitmen untuk menjadi bagian dari solusi yang menghubungkan dunia melalui infrastruktur yang handal dan aman.</p>
+<div class="highlight">
+"Bagi saya, setiap kabel yang terhubung dan setiap konfigurasi yang berhasil adalah langkah menuju dunia yang lebih terhubung dan efisien."
+</div>
+</div>
+</div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+<div class="container">
+<div class="section-title">
+<h2>Keahlian Saya</h2>
+<p>Kemampuan teknis dan profesional yang saya kuasai</p>
+</div>
+<div class="skills-container">
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-network-wired"></i>
+</div>
+<h3>Cisco Networking</h3>
+<p>Routing & Switching</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fab fa-linux"></i>
+</div>
+<h3>Linux Server</h3>
+<p>Debian & Ubuntu</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-server"></i>
+</div>
+<h3>Web Basic</h3>
+<p>Html, CSS, JavaScript</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-wifi"></i>
+</div>
+<h3>Cabling</h3>
+<p>LAN & Fiber Optic</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h3>Network Security</h3>
+<p>Firewall</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-tools"></i>
+</div>
+<h3>Hardware</h3>
+<p>Network Troubleshooting</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+<div class="container">
+<div class="section-title">
+<h2>Portofolio Saya</h2>
+<p>Beberapa proyek terbaik yang pernah saya kerjakan</p>
+</div>
+<div class="portfolio-grid">
+<div class="portfolio-item">
+<div class="portfolio-img">
+<img src="foto3.jpeg" alt="Jaringan Sekolah">
+<div class="portfolio-overlay">
+<h3>Network Sekolah</h3>
+<p>Implementasi jaringan LAN untuk laboratorium komputer dengan 50+ client</p>
+</div>
+</div>
+<div class="portfolio-content">
+<h3>Network Sekolah</h3>
+<p>LAN Implementation</p>
+<div class="portfolio-tags">
+<span class="tag">Cisco</span>
+<span class="tag">VLAN</span>
+<span class="tag">DHCP</span>
+</div>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-img">
+<img src="foto5.jpeg" alt="Server Monitoring">
+<div class="portfolio-overlay">
+<h3>Network Troubleshooting</h3>
+<p>Proses menemukan dan memperbaiki masalah konektivitas untuk memulihkan internet</p>
+</div>
+</div>
+<div class="portfolio-content">
+<h3>Troubleshooting</h3>
+<p>Troubleshooting Jaringan</p>
+<div class="portfolio-tags">
+<span class="tag">Splicing</span>
+<span class="tag">Konfigurasi</span>
+</div>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-img">
+<img src="foto4.jpeg" alt="MikroTik Config">
+<div class="portfolio-overlay">
+<h3>MikroTik Configuration</h3>
+<p>Konfigurasi router MikroTik dengan fitur firewall</p>
+</div>
+</div>
+<div class="portfolio-content">
+<h3>MikroTik Config</h3>
+<p>Mikrotik Configuration</p>
+<div class="portfolio-tags">
+<span class="tag">MikroTik</span>
+<span class="tag">Firewall</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+<div class="container">
+<div class="section-title">
+<h2>Pengalaman</h2>
+<p>Perjalanan pembelajaran dan pengalaman saya</p>
+</div>
+<div class="experience-container">
+<div class="experience-item">
+<span class="date">2023 - Sekarang</span>
+<h3><i class="fas fa-graduation-cap"></i> Tari</h3>
+<span class="company">Kegiatan Ekstra Sekolah</span>
+<p>Mempelajari beberapa tarian daerah, mengenal berbagai jenis kesenian, dan mengikuti beberapa perlombaan di luar sekolah</p>
+</div>
+<div class="experience-item">
+<span class="date">Juli 2025 - Desember 2025</span>
+<h3><i class="fas fa-graduation-cap"></i> Praktik Kerja Lapangan</h3>
+<span class="company">Nafisa Network</span>
+<p>Membantu mengatasi maintinance jaringan, membantu memasang jaringan Wi-Fi baru, splicing kabel Fiber Optic dan crimping kabel LAN</p>
+</div>
+<div class="experience-item">
+<span class="date">Desember 2025 - Sekarang</span>
+<h3><i class="fas fa-medal"></i> Kasir Cafe</h3>
+<span class="company">Teras Tepi Sawah (EDC Group)</span>
+<p>Customer Service, membuat laporan keuangan dan mencatat barang masuk/keluar</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+<div class="container">
+<div class="section-title">
+<h2>Kontak Saya</h2>
+<p>Mari terhubung dan berdiskusi tentang peluang kerja sama</p>
+</div>
+<div class="contact-container">
+<div class="contact-info">
+<h3>Informasi Kontak</h3>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+<div class="contact-text">
+<h4>Email</h4>
+<a href="mailto:aisyahnuraulia098@gmail.com">aisyahnuraulia098@gmail.com</a>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-phone"></i>
+</div>
+<div class="contact-text">
+<h4>Telepon</h4>
+<a href="tel:+6285231474080">+62 852-3147-4080</a>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="contact-text">
+<h4>Lokasi</h4>
+<p>Nganjuk, Jawa Timur, Indonesia</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-clock"></i>
+</div>
+<div class="contact-text">
+<h4>Bersedia Untuk</h4>
+<p>Magang, Freelance dan Full-time</p>
+</div>
+</div>
+</div>
+<div class="contact-form">
+<form id="contactForm">
+<div class="form-group">
+<label for="name">Nama</label>
+<input type="text" id="name" class="form-control" required>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" class="form-control" required>
+</div>
+<div class="form-group">
+<label for="message">Pesan</label>
+<textarea id="message" class="form-control" required></textarea>
+</div>
+<button type="submit" class="submit-btn">
+Kirim Pesan <i class="fas fa-paper-plane"></i>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-logo">Aisyah Nur Aulia</div>
+<p class="footer-tagline">Membangun infrastruktur jaringan yang handal untuk masa depan digital</p>
+</div>
+<div class="copyright">
+<p>&copy; 2026 Aisyah Nur Aulia. All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Floating Action Button -->
+<a href="#" class="floating-cv" title="Download CV" onclick="openCVModal(); return false;">
+<i class="fas fa-download"></i>
+</a>
+
+<!-- Back to Top Button -->
+<button id="backToTop" title="Kembali ke atas">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ========== CV MODAL ========== -->
+<div class="cv-modal-overlay" id="cvModal">
+<div class="cv-modal">
+<button class="cv-modal-close" onclick="closeCVModal()">
+<i class="fas fa-times"></i>
+</button>
+<div class="cv-content">
+<!-- CV Header -->
+<div class="cv-header">
+<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" alt="Foto Profil" class="cv-photo">
+<div class="cv-header-info">
+<h1>Aisyah Nur Aulia</h1>
+<p class="title">Siswi Teknik Komputer & Jaringan (TKJ)</p>
+<div class="cv-contact-info">
+<div class="cv-contact-item">
+<i class="fas fa-envelope"></i>
+<span>aisyahnuraulia098@gmail.com</span>
+</div>
+<div class="cv-contact-item">
+<i class="fas fa-phone"></i>
+<span>+62 852-3147-4080</span>
+</div>
+<div class="cv-contact-item">
+<i class="fas fa-map-marker-alt"></i>
+<span>Nganjuk, Jawa Timur, Indonesia</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- CV Sections -->
+<div class="cv-section">
+<h3><i class="fas fa-user"></i> Profil</h3>
+<p>Siswi TKJ yang bersemangat dalam dunia networking, sistem administrasi, dan keamanan jaringan. Saya memiliki kemampuan komunikasi yang cukup baik dan komunikatif yang dapat membantu saya untuk belajar dan beradaptasi dengan cepat.</p>
+</div>
+
+<div class="cv-section">
+<h3><i class="fas fa-graduation-cap"></i> Pendidikan</h3>
+<div class="cv-item">
+<h4>SMK Negeri 1 Tanjunganom</h4>
+<p class="subtitle">Teknik Komputer dan Jaringan (TKJ)</p>
+<p class="date">2023 - Sekarang</p>
+<p>Fokus pada networking, server administration, dan keamanan jaringan.</p>
+</div>
+</div>
+
+<div class="cv-section">
+<h3><i class="fas fa-briefcase"></i> Pengalaman</h3>
+<div class="cv-item">
+<h4>Praktik Kerja Lapangan</h4>
+<p class="subtitle">Nafisa Network</p>
+<p class="date">Juli 2025 - Desember 2025</p>
+<p>Membantu mengatasi maintinance jaringan, membantu memasang jaringan Wi-Fi baru, splicing kabel Fiber Optic, dan crimping kabel LAN</p>
+</div>
+<div class="cv-item">
+<h4>Kasir Cafe</h4>
+<p class="subtitle">Tras Tepi Sawah (EDC Group)</p>
+<p class="date">Desember 2025 - Sekarang</p>
+<p>Customer Service, membuat laporan keuangan dan mencatat barang masuk/keluar</p>
+</div>
+</div>
+
+<div class="cv-section">
+<h3><i class="fas fa-tools"></i> Keahlian</h3>
+<div class="cv-skills-grid">
+<div class="cv-skill-item">
+<span>Customer Service</span>
+</div>
+<div class="cv-skill-item">
+<span>Komunikatif</span>
+</div>
+<div class="cv-skill-item">
+<span>Disiplin</span>
+</div>
+<div class="cv-skill-item">
+<span>Teliti</span>
+</div>
+</div>
+</div>
+
+<div class="cv-section">
+<h3><i class="fas fa-certificate"></i> Sertifikasi</h3>
+<div class="cv-item">
+<h4>Praktik Kerja Lapangan (PKL)</h4>
+<p class="date">2025</p>
+</div>
+</div>
+
+<!-- Download Button -->
+<div style="text-align: center; margin-top: 40px;">
+<button class="cv-download-btn" onclick="downloadCV()">
+<i class="fas fa-file-pdf"></i> Download CV (PDF)
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+// ========== CV MODAL FUNCTIONS ==========
+function openCVModal() {
+const modal = document.getElementById('cvModal');
+modal.classList.add('active');
+document.body.style.overflow = 'hidden';
+}
+
+function closeCVModal() {
+const modal = document.getElementById('cvModal');
+modal.classList.remove('active');
+document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+document.getElementById('cvModal').addEventListener('click', function(e) {
+if (e.target === this) {
+closeCVModal();
+}
+});
+
+// Close modal with ESC key
+document.addEventListener('keydown', function(e) {
+if (e.key === 'Escape') {
+closeCVModal();
+}
+});
+
+// Download CV Function
+function downloadCV() {
+// Create CV content for PDF
+const cvContent = `
+CURRICULUM VITAE
+
+Aisyah Nur Aulia
+Siswi Teknik Komputer & Jaringan (TKJ)
+
+KONTAK:
+Email: aisyahnuraulia098@gmail.com
+Telepon: +62 852-3147-4080
+Lokasi: Nganjuk, Jawa Timur, Indonesia
+Instagram: https://www.instagram.com/aynrly?igsh=MWxmbjJ1ZmN2c3k4dQ==
+
+PROFIL:
+Siswi TKJ yang bersemangat dalam dunia networking, sistem administrasi, dan keamanan jaringan. Saya memiliki kemampuan komunikasi yang cukup baik dan komunikatif yang dapat membantu saya untuk belajar dan beradaptasi dengan cepat.
+PENDIDIKAN:
+2023 - Sekarang | SMK Negeri 1 Tanjunganom
+Jurusan: Teknik Komputer dan Jaringan (TKJ)
+
+PENGALAMAN:
+Juli - Desember 2025 | Praktik Kerja Lapangan - Nafisa Network
+- Membantu memperbaiki maintinance jaringan
+- Splicing kabel FO
+- Crimping kabel LAN
+
+Desember 2025 - Sekarang | Kasir Cafe - Teras Tepi Sawah (EDC Group)
+- Melayani Customer
+- Membuat laporan keuangan
+- Mencatat barang masuk/keluar
+
+KEAHLIAN:
+- Customer Service
+- Komunikatif
+- Disiplin
+- Teliti
+- Mampu Bekerja Dalam Tim
+
+SERTIFIKASI:
+2025 | Praktik Kerja Lapangan (PKL)
+`;
+
+// Create and download file
+const blob = new Blob([cvContent], { type: 'text/plain' });
+const url = window.URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = 'CV_Aisyah_Nur_Aulia.txt';
+document.body.appendChild(a);
+a.click();
+document.body.removeChild(a);
+window.URL.revokeObjectURL(url);
+
+// Show success message
+alert('✅ CV berhasil diunduh!\n\nFile: CV_Aisyah_Nur_Aulia.txt\n\nUntuk versi PDF, silakan convert file ini atau hubungi saya langsung.');
+}
+
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+const backToTopButton = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+// Navbar effect
+if (window.pageYOffset > 100) {
+navbar.classList.add('scrolled');
+} else {
+navbar.classList.remove('scrolled');
+}
+// Back to top button
+if (window.pageYOffset > 300) {
+backToTopButton.classList.add('show');
+} else {
+backToTopButton.classList.remove('show');
+}
+// Active nav link
+const sections = document.querySelectorAll('section');
+const scrollPos = window.scrollY + 80;
+sections.forEach(section => {
+if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
+const id = section.getAttribute('id');
+document.querySelectorAll('.nav-links a').forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href') === `#${id}`) {
+link.classList.add('active');
+}
+});
+}
+});
+});
+
+// Back to top functionality
+backToTopButton.addEventListener('click', () => {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+
+// Form submission
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', (e) => {
+e.preventDefault();
+const name = document.getElementById('name').value;
+alert(`Terima kasih ${name}!\nPesan Anda telah terkirim. Saya akan segera menghubungi Anda.`);
+contactForm.reset();
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+if (this.getAttribute('href') === '#') return;
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80,
+behavior: 'smooth'
+});
+// Close mobile menu if open
+if (window.innerWidth <= 992) {
+document.querySelector('.nav-links').style.display = 'none';
+}
+}
+});
+});
+
+// Mobile menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+hamburger.addEventListener('click', () => {
+if (navLinks.style.display === 'flex') {
+navLinks.style.display = 'none';
+} else {
+navLinks.style.display = 'flex';
+navLinks.style.flexDirection = 'column';
+navLinks.style.position = 'absolute';
+navLinks.style.top = '70px';
+navLinks.style.left = '0';
+navLinks.style.width = '100%';
+navLinks.style.background = 'white';
+navLinks.style.padding = '20px 0';
+navLinks.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+}
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+if (window.innerWidth <= 992 && navLinks.style.display === 'flex') {
+if (!e.target.closest('.hamburger') && !e.target.closest('.nav-links')) {
+navLinks.style.display = 'none';
+}
+}
+});
+
+// Initialize floating animation delay
+document.addEventListener('DOMContentLoaded', () => {
+setTimeout(() => {
+document.querySelector('.hero-image img').style.animationDelay = '0s';
+document.querySelector('.about-image img').style.animationDelay = '0.5s';
+}, 500);
+});
+</script>
+
+</body>
+</html>
